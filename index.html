@@ -394,4 +394,539 @@
   @media (max-width:820px){ .footer-top{ grid-template-columns:1fr 1fr; } }
   @media (max-width:520px){ .footer-top{ grid-template-columns:1fr; } }
 
-  /* ---------- Floating WhatsApp ------
+  /* ---------- Floating WhatsApp ---------- */
+  .float-wa{
+    position:fixed; right:22px; bottom:22px; z-index:150;
+    width:58px; height:58px; border-radius:50%;
+    background:linear-gradient(180deg,#28c76f,#1ea85a);
+    display:flex; align-items:center; justify-content:center;
+    box-shadow:0 10px 28px rgba(30,168,90,0.38);
+    transition:transform .2s ease;
+  }
+  .float-wa:hover{ transform:translateY(-3px) scale(1.04); }
+  .float-wa svg{ width:27px; height:27px; color:#06180E; }
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header" id="siteHeader">
+  <div class="container nav">
+    <a class="brand" href="#home" aria-label="Ali Mobile Zone home">
+      <svg class="brand-mark" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <circle cx="20" cy="20" r="19" stroke="#C9A227" stroke-width="1.4"/>
+        <path d="M15 11h10a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H15a2 2 0 0 1-2-2V13a2 2 0 0 1 2-2Z" stroke="#E8C468" stroke-width="1.4"/>
+        <path d="M18 25h4" stroke="#E8C468" stroke-width="1.4" stroke-linecap="round"/>
+      </svg>
+      <span class="brand-name">Ali Mobile <span>Zone</span></span>
+    </a>
+
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#why">Why Us</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#testimonials">Reviews</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="nav-cta">
+      <a class="btn btn-outline" href="tel:+923213427117">Call Now</a>
+      <a class="btn btn-primary" href="#contact">Contact Us</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobilePanel">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 7h16M4 12h16M4 17h16" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+  </div>
+  <nav class="mobile-panel" id="mobilePanel" aria-label="Mobile">
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#why">Why Us</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#testimonials">Reviews</a>
+    <a href="#contact">Contact</a>
+    <a href="tel:+923213427117">Call Now — 0321 3427117</a>
+  </nav>
+</header>
+
+<main id="main">
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="container">
+      <div class="hero-copy">
+        <div class="hero-eyebrow reveal d1"><span class="dot"></span> Lahore's trusted repair counter</div>
+        <h1 class="reveal d2">All mobile repairing, <em>done carefully.</em></h1>
+        <p class="hero-desc reveal d3">
+          Ali Mobile Zone repairs phones the way we'd want ours repaired — screens, batteries, water
+          damage, charging ports and software, opened up carefully and closed up properly. Genuine parts,
+          honest pricing, and a technician who explains what actually went wrong.
+        </p>
+        <div class="hero-ctas reveal d4">
+          <a class="btn btn-primary" href="#contact">Contact Us</a>
+          <a class="btn btn-outline" href="#services">View Our Services</a>
+        </div>
+        <div class="hero-trust reveal d4">
+          <div><strong>8+ yrs</strong><span>Repair experience</span></div>
+          <div><strong>20,000+</strong><span>Phones repaired</span></div>
+          <div><strong>90 days</strong><span>Service warranty</span></div>
+        </div>
+      </div>
+
+      <div class="hero-art reveal d3" aria-hidden="true">
+        <svg viewBox="0 0 420 460" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="210" cy="230" r="180" fill="url(#glow)"/>
+          <rect x="140" y="70" width="140" height="290" rx="26" stroke="#3A3420" stroke-width="2"/>
+          <rect x="140" y="70" width="140" height="290" rx="26" stroke="#C9A227" stroke-width="1.4" class="draw"/>
+          <rect x="156" y="98" width="108" height="196" rx="6" stroke="#6B5A26" stroke-width="1.2"/>
+          <line x1="156" y1="150" x2="264" y2="128" stroke="#E8C468" stroke-width="1.4"/>
+          <line x1="156" y1="196" x2="264" y2="212" stroke="#E8C468" stroke-width="1" opacity="0.6"/>
+          <circle cx="210" cy="330" r="9" stroke="#C9A227" stroke-width="1.4"/>
+          <path d="M96 240 h32 M96 240 l12 -14 M96 240 l12 14" stroke="#C9A227" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M300 190 l26 -34 M326 156 l-8 2 M326 156 l2 8" stroke="#E8C468" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+          <g opacity="0.8">
+            <circle cx="86" cy="150" r="3" fill="#C9A227"/>
+            <circle cx="330" cy="300" r="3" fill="#C9A227"/>
+            <circle cx="70" cy="330" r="2.4" fill="#E8C468"/>
+          </g>
+          <defs>
+            <radialGradient id="glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(210 230) rotate(90) scale(180)">
+              <stop stop-color="#C9A227" stop-opacity="0.16"/>
+              <stop offset="1" stop-color="#C9A227" stop-opacity="0"/>
+            </radialGradient>
+          </defs>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-visual">
+        <div class="about-card">
+          <svg viewBox="0 0 300 140" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect x="10" y="10" width="280" height="120" rx="14" stroke="#3A3420"/>
+            <path d="M30 100 L80 55 L120 90 L160 40 L200 75 L270 30" stroke="#C9A227" stroke-width="1.6" fill="none"/>
+            <circle cx="80" cy="55" r="3" fill="#E8C468"/>
+            <circle cx="160" cy="40" r="3" fill="#E8C468"/>
+            <circle cx="270" cy="30" r="3" fill="#E8C468"/>
+          </svg>
+          <p>Every repair logged, tested and warrantied — so a phone that leaves our counter doesn't come back for the same problem.</p>
+        </div>
+      </div>
+
+      <div class="about-content">
+        <div class="section-head">
+          <span class="kicker">About Ali Mobile Zone</span>
+          <h2>A repair counter built on getting it right the first time.</h2>
+          <p>
+            Ali Mobile Zone started as a single repair bench in Lahore and grew on word of mouth —
+            customers sending friends and family because their phone came back working properly, with
+            no shortcuts. We still work that way: one technician, one phone, one careful repair at a time.
+          </p>
+        </div>
+
+        <ul class="value-list">
+          <li>
+            <span class="value-num">Mission</span>
+            <div>
+              <h3>Repair it properly, or tell you honestly why not</h3>
+              <p>We diagnose before we quote, use parts we'd put in our own phones, and never replace more than what's actually broken.</p>
+            </div>
+          </li>
+          <li>
+            <span class="value-num">Values</span>
+            <div>
+              <h3>Transparency at every step</h3>
+              <p>You'll know the fault, the part being used, and the price before any work starts — no surprises when you come to collect it.</p>
+            </div>
+          </li>
+          <li>
+            <span class="value-num">Difference</span>
+            <div>
+              <h3>Trained hands, tested results</h3>
+              <p>Every repair is bench-tested before handover, and backed by a written warranty — most shops in the market don't offer either.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-head">
+        <span class="kicker">Services</span>
+        <h2>What we repair</h2>
+        <p>From a cracked screen to a phone that won't switch on at all — here's what comes across our bench most often.</p>
+      </div>
+
+      <div class="service-grid">
+        <div class="service-card">
+          <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="6" y="3" width="12" height="18" rx="2"/><path d="M9 8l3 3-3 3"/></svg></div>
+          <h3>Screen Replacement</h3>
+          <p>Cracked glass, dead pixels or unresponsive touch — replaced with original or high-grade panels, calibrated before you leave.</p>
+          <a class="btn-ghost" data-detail="screen" href="#services">Learn More</a>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="7" y="6" width="13" height="12" rx="2"/><path d="M20 10v4"/><path d="M11 9l-2 3h3l-2 3"/></svg></div>
+          <h3>Battery Replacement</h3>
+          <p>Draining fast, swelling or shutting off at 30%? We fit genuine-capacity batteries and check charging health after.</p>
+          <a class="btn-ghost" data-detail="battery" href="#services">Learn More</a>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3s6 6.5 6 11a6 6 0 1 1-12 0c0-4.5 6-11 6-11Z"/><path d="M14 17l-3-3"/></svg></div>
+          <h3>Water Damage Repair</h3>
+          <p>Dropped in water? The sooner it arrives, the better the odds — full ultrasonic clean and board-level inspection.</p>
+          <a class="btn-ghost" data-detail="water" href="#services">Learn More</a>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="3"/><path d="M19 12a7 7 0 0 0-.2-1.6l2-1.5-2-3.4-2.3.9a7 7 0 0 0-2.7-1.6L13.4 2h-2.8l-.4 2.8a7 7 0 0 0-2.7 1.6l-2.3-.9-2 3.4 2 1.5A7 7 0 0 0 5 12"/></svg></div>
+          <h3>Software &amp; Unlocking</h3>
+          <p>Frozen systems, forgotten passcodes, network unlocking and clean OS reinstalls — done without wiping what matters, where possible.</p>
+          <a class="btn-ghost" data-detail="software" href="#services">Learn More</a>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="9" y="2" width="6" height="7" rx="1"/><path d="M12 9v6"/><path d="M8 15h8l-1 6H9l-1-6Z"/></svg></div>
+          <h3>Charging Port Repair</h3>
+          <p>Loose connection, no charge, or charges only at an angle — port cleaned or replaced and load-tested.</p>
+          <a class="btn-ghost" data-detail="port" href="#services">Learn More</a>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="7" width="18" height="12" rx="2"/><circle cx="12" cy="13" r="3.4"/><path d="M8 7l1.6-2.4h4.8L16 7"/></svg></div>
+          <h3>Camera &amp; Speaker Repair</h3>
+          <p>Blurry photos, muffled calls or a mic that cuts out — lens, sensor and speaker modules replaced and re-tested.</p>
+          <a class="btn-ghost" data-detail="camera" href="#services">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY US -->
+  <section class="why" id="why">
+    <div class="container">
+      <div class="section-head">
+        <span class="kicker">Why choose us</span>
+        <h2>What customers keep coming back for</h2>
+      </div>
+
+      <div class="why-grid">
+        <div class="why-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2l2.5 5.5L20 8.5l-4 4 1 6-5-3-5 3 1-6-4-4 5.5-1L12 2Z"/></svg>
+          <h3>Experienced team</h3>
+          <p>Technicians trained on the boards they're working on, not learning on your phone.</p>
+        </div>
+        <div class="why-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 3l7 3v6c0 5-3.4 7.8-7 9-3.6-1.2-7-4-7-9V6l7-3Z"/><path d="M9 12l2 2 4-4"/></svg>
+          <h3>Quality parts</h3>
+          <p>Original or tested high-grade components only — never the cheapest option on the shelf.</p>
+        </div>
+        <div class="why-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 15V9a2 2 0 0 1 2-2h10l4 4v4a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2Z"/><circle cx="8" cy="17" r="1.6"/><circle cx="17" cy="17" r="1.6"/></svg>
+          <h3>Fair, upfront pricing</h3>
+          <p>A written quote before any work starts, matched to what's actually wrong.</p>
+        </div>
+        <div class="why-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>
+          <h3>Fast turnaround</h3>
+          <p>Most common repairs done same-day, often while you wait at the counter.</p>
+        </div>
+        <div class="why-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 21s-7-4.4-9.5-9A5.5 5.5 0 0 1 12 6.5 5.5 5.5 0 0 1 21.5 12c-2.5 4.6-9.5 9-9.5 9Z"/></svg>
+          <h3>Warrantied work</h3>
+          <p>Every repair backed by a written warranty — come back if something's off.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="stats" id="stats">
+    <div class="container">
+      <div class="section-head">
+        <span class="kicker">By the numbers</span>
+        <h2>Nine years on the same street</h2>
+      </div>
+      <div class="stats-grid">
+        <div class="stat"><strong>8+</strong><span>Years in business</span></div>
+        <div class="stat"><strong>15,000+</strong><span>Customers served</span></div>
+        <div class="stat"><strong>20,000+</strong><span>Phones repaired</span></div>
+        <div class="stat"><strong>12</strong><span>Team members</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="gallery" id="gallery">
+    <div class="container">
+      <div class="section-head">
+        <span class="kicker">Our work</span>
+        <h2>A look at the bench</h2>
+        <p>A sample of the repairs we handle most. Swap these tiles for real before/after photos of your workshop and finished jobs whenever you're ready.</p>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gallery-tile g-a"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="6" y="3" width="12" height="18" rx="2"/><path d="M9 8l3 3-3 3"/></svg><span>Screen replacement</span></div>
+        <div class="gallery-tile g-b"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="7" y="6" width="13" height="12" rx="2"/><path d="M11 9l-2 3h3l-2 3"/></svg><span>Battery service</span></div>
+        <div class="gallery-tile g-c"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M12 3s6 6.5 6 11a6 6 0 1 1-12 0c0-4.5 6-11 6-11Z"/></svg><span>Water damage</span></div>
+        <div class="gallery-tile g-d"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="3" y="7" width="18" height="10" rx="2"/><path d="M7 12h10"/></svg><span>Board-level repair</span></div>
+        <div class="gallery-tile g-e"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="3" y="7" width="18" height="12" rx="2"/><circle cx="12" cy="13" r="3.2"/></svg><span>Camera &amp; speaker</span></div>
+        <div class="gallery-tile g-f"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="9" y="2" width="6" height="7" rx="1"/><path d="M12 9v6"/></svg><span>Charging ports</span></div>
+      </div>
+      <p class="gallery-note">Placeholder illustrations — replace with real workshop and job photos once you have them.</p>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+      <div class="section-head">
+        <span class="kicker">Reviews</span>
+        <h2>What customers say</h2>
+      </div>
+
+      <div class="t-grid">
+        <div class="t-card">
+          <div class="t-stars">★★★★★</div>
+          <p>My screen was completely shattered and I thought I'd need a new phone. Ali Mobile Zone had it looking brand new in under two hours, and the price was fair.</p>
+          <div class="t-person">
+            <div class="t-avatar">AR</div>
+            <div><strong>Ahmed Raza</strong><span>Gulberg, Lahore</span></div>
+          </div>
+        </div>
+        <div class="t-card">
+          <div class="t-stars">★★★★★</div>
+          <p>Dropped my phone in the sink and panicked. They were upfront that recovery wasn't guaranteed, but got it fully working again. Genuinely honest people.</p>
+          <div class="t-person">
+            <div class="t-avatar">BK</div>
+            <div><strong>Bilal Khan</strong><span>DHA, Lahore</span></div>
+          </div>
+        </div>
+        <div class="t-card">
+          <div class="t-stars">★★★★★</div>
+          <p>Battery was draining within a few hours. New battery fitted while I waited, and it's been solid for months now. Will be my go-to for any repair.</p>
+          <div class="t-person">
+            <div class="t-avatar">ST</div>
+            <div><strong>Sana Tariq</strong><span>Model Town, Lahore</span></div>
+          </div>
+        </div>
+        <div class="t-card">
+          <div class="t-stars">★★★★★</div>
+          <p>Explained exactly what was wrong with the charging port before touching anything, and the quote matched the final bill exactly. No pressure to buy extras.</p>
+          <div class="t-person">
+            <div class="t-avatar">HA</div>
+            <div><strong>Hassan Ali</strong><span>Johar Town, Lahore</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="contact-info">
+        <div class="section-head" style="margin-bottom:8px;">
+          <span class="kicker">Get in touch</span>
+          <h2>Bring your phone in, or reach out first</h2>
+          <p>Drop by the counter or send a message — we'll usually reply within the hour during business hours.</p>
+        </div>
+
+        <div class="info-row">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 5c0 8.3 6.7 15 15 15l3-4-6-3-2 2c-2.5-1.2-4.8-3.5-6-6l2-2-3-6-4 1Z"/></svg>
+          <div><strong>Call us</strong><a href="tel:+923213427117">0321 3427117</a></div>
+        </div>
+        <div class="info-row">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+          <div><strong>Email us</strong><a href="mailto:contact@alimobilezone.com">contact@alimobilezone.com</a></div>
+        </div>
+        <div class="info-row">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 22s7-6.5 7-12a7 7 0 1 0-14 0c0 5.5 7 12 7 12Z"/><circle cx="12" cy="10" r="2.4"/></svg>
+          <div><strong>Visit us</strong><span>Shop #12, Main Boulevard, Gulberg III, Lahore, Punjab — <em>placeholder, update with exact address</em></span></div>
+        </div>
+
+        <a class="wa-btn" href="https://wa.me/923213427117?text=Hi%20Ali%20Mobile%20Zone%2C%20I%27d%20like%20to%20ask%20about%20a%20repair." target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm0 18a8 8 0 0 1-4.1-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8 8 0 1 1 12 20Zm4.4-6c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.5.1-.2.2-.6.8-.8 1-.1.1-.3.2-.5.1-.7-.3-1.5-.8-2.1-1.5-.5-.6-.8-1.1-.9-1.3-.1-.2 0-.4.1-.5l.4-.5c.1-.1.1-.3.1-.4 0-.1-.5-1.3-.7-1.7-.2-.5-.4-.4-.5-.4h-.5c-.2 0-.4.1-.6.3-.2.2-.8.8-.8 1.9 0 1.1.8 2.2 1 2.3.1.2 1.6 2.5 3.9 3.5.5.2 1 .4 1.3.5.5.2 1 .1 1.4.1.4-.1 1.3-.5 1.5-1 .2-.5.2-.9.1-1Z"/></svg>
+          Chat on WhatsApp
+        </a>
+
+        <div>
+          <div style="font-size:13px;color:var(--paper-dim);margin-bottom:10px;">Follow us</div>
+          <div class="social-row">
+            <a class="social-btn" href="https://facebook.com/alimobilezone" target="_blank" rel="noopener" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M15 8h2V4h-2a4 4 0 0 0-4 4v2H9v4h2v6h4v-6h2.5L18 10h-3V8a1 1 0 0 1 1-1Z"/></svg>
+            </a>
+            <a class="social-btn" href="https://instagram.com/alimobilezone" target="_blank" rel="noopener" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1"/></svg>
+            </a>
+            <a class="social-btn" href="https://tiktok.com/@alimobilezone" target="_blank" rel="noopener" aria-label="TikTok">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M14 4v9.5a3.5 3.5 0 1 1-3-3.46"/><path d="M14 4c.4 2 2 3.6 4 4"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <form class="contact-form" id="contactForm">
+        <div class="form-row">
+          <div class="field">
+            <label for="fname">Full name</label>
+            <input type="text" id="fname" name="name" placeholder="Your name" required>
+          </div>
+          <div class="field">
+            <label for="fphone">Phone number</label>
+            <input type="tel" id="fphone" name="phone" placeholder="03XX XXXXXXX" required>
+          </div>
+        </div>
+        <div class="field">
+          <label for="femail">Email (optional)</label>
+          <input type="email" id="femail" name="email" placeholder="you@example.com">
+        </div>
+        <div class="field">
+          <label for="fservice">What needs fixing?</label>
+          <select id="fservice" name="service">
+            <option>Screen replacement</option>
+            <option>Battery replacement</option>
+            <option>Water damage repair</option>
+            <option>Software &amp; unlocking</option>
+            <option>Charging port repair</option>
+            <option>Camera &amp; speaker repair</option>
+            <option>Something else</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="fmessage">Message</label>
+          <textarea id="fmessage" name="message" placeholder="Tell us about the issue and your device model"></textarea>
+        </div>
+        <div class="form-foot">
+          <span class="form-note">Opens your email app with the details filled in.</span>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </div>
+        <p class="form-status" id="formStatus" role="status"></p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a class="brand" href="#home" aria-label="Ali Mobile Zone home">
+          <svg class="brand-mark" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <circle cx="20" cy="20" r="19" stroke="#C9A227" stroke-width="1.4"/>
+            <path d="M15 11h10a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H15a2 2 0 0 1-2-2V13a2 2 0 0 1 2-2Z" stroke="#E8C468" stroke-width="1.4"/>
+            <path d="M18 25h4" stroke="#E8C468" stroke-width="1.4" stroke-linecap="round"/>
+          </svg>
+          <span class="brand-name">Ali Mobile <span>Zone</span></span>
+        </a>
+        <p>All mobile repairing, carefully — screens, batteries, water damage and software repair from a counter in Lahore you can trust.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#testimonials">Reviews</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#services">Screen Replacement</a></li>
+          <li><a href="#services">Battery Replacement</a></li>
+          <li><a href="#services">Water Damage Repair</a></li>
+          <li><a href="#services">Software &amp; Unlocking</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:+923213427117">0321 3427117</a></li>
+          <li><a href="mailto:contact@alimobilezone.com">contact@alimobilezone.com</a></li>
+          <li><span>Gulberg III, Lahore, Pakistan</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> Ali Mobile Zone. All rights reserved.</span>
+      <span>alimobilezone.com</span>
+    </div>
+  </div>
+</footer>
+
+<a class="float-wa" href="https://wa.me/923213427117?text=Hi%20Ali%20Mobile%20Zone%2C%20I%27d%20like%20to%20ask%20about%20a%20repair." target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm0 18a8 8 0 0 1-4.1-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8 8 0 1 1 12 20Zm4.4-6c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.5.1-.2.2-.6.8-.8 1-.1.1-.3.2-.5.1-.7-.3-1.5-.8-2.1-1.5-.5-.6-.8-1.1-.9-1.3-.1-.2 0-.4.1-.5l.4-.5c.1-.1.1-.3.1-.4 0-.1-.5-1.3-.7-1.7-.2-.5-.4-.4-.5-.4h-.5c-.2 0-.4.1-.6.3-.2.2-.8.8-.8 1.9 0 1.1.8 2.2 1 2.3.1.2 1.6 2.5 3.9 3.5.5.2 1 .4 1.3.5.5.2 1 .1 1.4.1.4-.1 1.3-.5 1.5-1 .2-.5.2-.9.1-1Z"/></svg>
+</a>
+
+<script>
+  // Sticky header shadow on scroll
+  var header = document.getElementById('siteHeader');
+  var onScroll = function(){
+    if(window.scrollY > 8){ header.classList.add('is-scrolled'); }
+    else{ header.classList.remove('is-scrolled'); }
+  };
+  window.addEventListener('scroll', onScroll, { passive:true });
+  onScroll();
+
+  // Mobile nav toggle
+  var navToggle = document.getElementById('navToggle');
+  var mobilePanel = document.getElementById('mobilePanel');
+  navToggle.addEventListener('click', function(){
+    var open = mobilePanel.classList.toggle('is-open');
+    navToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  mobilePanel.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){
+      mobilePanel.classList.remove('is-open');
+      navToggle.setAttribute('aria-expanded','false');
+    });
+  });
+
+  // Footer year
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Contact form -> opens the visitor's email client with details filled in.
+  // Replace this handler with a real form backend (e.g. Formspree, your own
+  // API) whenever you're ready to collect submissions server-side.
+  var form = document.getElementById('contactForm');
+  var status = document.getElementById('formStatus');
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    var name = form.name.value.trim();
+    var phone = form.phone.value.trim();
+    var email = form.email.value.trim();
+    var service = form.service.value;
+    var message = form.message.value.trim();
+
+    if(!name || !phone){
+      status.textContent = 'Please add your name and phone number.';
+      return;
+    }
+
+    var subject = 'Repair inquiry — ' + service;
+    var body =
+      'Name: ' + name + '\n' +
+      'Phone: ' + phone + '\n' +
+      (email ? ('Email: ' + email + '\n') : '') +
+      'Service: ' + service + '\n\n' +
+      'Message:\n' + (message || '—');
+
+    var mailto = 'mailto:contact@alimobilezone.com'
+      + '?subject=' + encodeURIComponent(subject)
+      + '&body=' + encodeURIComponent(body);
+
+    window.location.href = mailto;
+    status.textContent = 'Opening your email app to send this to us…';
+  });
+</script>
+</body>
+</html>
