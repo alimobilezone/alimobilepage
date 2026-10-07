@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ali Event Organizer | Lahore</title>
+<meta name="description" content="Ali Event Organizer — Birthday parties, weddings, mehndi, corporate and private events in Lahore.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0b0b0e;--card:#15151a;--gold:#d9b76c;--cream:#fff5dc;--muted:#b8b8c0;--line:#292930;--max:1150px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 15% 5%,#4a351615,transparent 30%),var(--bg);color:#fff;font-family:"DM Sans",sans-serif;line-height:1.6}a{text-decoration:none;color:inherit}.wrap{max-width:var(--max);width:calc(100% - 32px);margin:auto}
+nav{position:fixed;z-index:10;top:0;left:0;right:0;padding:16px 0;background:#09090bd9;backdrop-filter:blur(16px);border-bottom:1px solid #ffffff0d}.nav{display:flex;align-items:center;justify-content:space-between}.logo{font:700 27px "Playfair Display";}.logo b{color:var(--gold)}.links{display:flex;gap:25px;align-items:center;font-size:14px;color:#ddd}.links a:hover{color:var(--gold)}.btn{display:inline-block;padding:13px 21px;border-radius:999px;background:linear-gradient(135deg,#e1c27c,#a47c37);color:#111;font-weight:700;transition:.25s}.btn:hover{transform:translateY(-3px)}.menu{display:none;font-size:25px}
+.hero{min-height:100vh;display:grid;align-items:center;background:linear-gradient(90deg,#08080bf2,#08080b92,#08080b45),url("https://images.unsplash.com/photo-1530103862676-de8c9debad1d?auto=format&fit=crop&w=2000&q=85") center/cover}.hero-inner{padding-top:80px;max-width:780px}.eyebrow{text-transform:uppercase;letter-spacing:4px;color:var(--gold);font-size:12px;font-weight:700;margin-bottom:15px}h1,h2,h3{font-family:"Playfair Display",serif}h1{font-size:clamp(48px,8vw,88px);line-height:1.02;margin:0 0 22px}h1 span,h2 span{color:var(--gold)}.lead{font-size:18px;color:#ddd;max-width:650px;margin-bottom:30px}.actions{display:flex;gap:12px;flex-wrap:wrap}.outline{padding:12px 20px;border:1px solid #ffffff3a;border-radius:999px}.outline:hover{border-color:var(--gold);color:var(--gold)}
+section{padding:95px 0}.heading{text-align:center;max-width:700px;margin:0 auto 45px}.heading h2{font-size:clamp(36px,5vw,58px);line-height:1.1;margin:0 0 12px}.heading p,.card p,.about p,.step p,.review p{color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}.card{background:linear-gradient(145deg,#ffffff09,#ffffff03);border:1px solid var(--line);padding:28px;border-radius:22px;transition:.3s}.card:hover{transform:translateY(-7px);border-color:#d9b76c55}.icon{font-size:34px}.card h3{font-size:25px;margin:14px 0 7px}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:center}.photo{height:540px;border-radius:28px;overflow:hidden;border:1px solid var(--line)}.photo img{width:100%;height:100%;object-fit:cover}.about h2{font-size:clamp(38px,5vw,60px);line-height:1.08;margin:0 0 20px}.checks{padding:0;list-style:none;color:#ddd}.checks li{margin:12px 0}.checks li:before{content:"✓";color:var(--gold);margin-right:10px}
+.gallery{display:grid;grid-template-columns:2fr 1fr 1fr;grid-auto-rows:220px;gap:14px}.gallery div{overflow:hidden;border-radius:18px;border:1px solid var(--line)}.gallery div:first-child{grid-row:span 2}.gallery img{width:100%;height:100%;object-fit:cover;transition:.5s}.gallery div:hover img{transform:scale(1.07)}
+.process{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.step{text-align:center;padding:25px;border:1px solid var(--line);border-radius:20px;background:#ffffff05}.num{margin:auto auto 15px;width:52px;height:52px;border-radius:50%;display:grid;place-items:center;border:1px solid #d9b76c66;color:var(--gold);font-weight:700}
+.booking{display:grid;grid-template-columns:.75fr 1.25fr;gap:18px}.box{padding:32px;border:1px solid var(--line);border-radius:24px;background:#ffffff05}.box h2{font-size:43px;line-height:1.1;margin:0 0 15px}.contact{display:grid;gap:10px;margin-top:25px}.contact a{padding:13px;border-radius:12px;background:#ffffff07}.form{display:grid;grid-template-columns:1fr 1fr;gap:13px}.field.full{grid-column:1/-1}label{font-size:12px;color:#ddd;display:block;margin-bottom:6px}input,select,textarea{width:100%;border:1px solid var(--line);border-radius:11px;background:#09090c;color:#fff;padding:13px;font:inherit;outline:none}textarea{min-height:110px;resize:vertical}input:focus,select:focus,textarea:focus{border-color:var(--gold)}button{border:0;cursor:pointer;font:inherit}.submit{grid-column:1/-1;width:100%}
+.reviews{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.review{padding:27px;border:1px solid var(--line);border-radius:20px;background:#ffffff05}.stars{color:var(--gold);letter-spacing:3px}
+.cta{padding:70px 25px;text-align:center;border-radius:28px;border:1px solid #d9b76c44;background:linear-gradient(#09090bb0,#09090bd9),url("https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?auto=format&fit=crop&w=1600&q=85") center/cover}.cta h2{font-size:clamp(40px,6vw,62px);margin:0 0 12px}.cta p{max-width:600px;margin:0 auto 25px;color:#ddd}
+footer{border-top:1px solid var(--line);padding:40px 0;color:var(--muted);font-size:14px}.foot{display:flex;justify-content:space-between;gap:20px}.wa{position:fixed;right:20px;bottom:20px;width:58px;height:58px;border-radius:50%;background:#25d366;display:grid;place-items:center;font-size:25px;z-index:20;box-shadow:0 10px 30px #25d36644}
+@media(max-width:800px){.links{display:none}.links.open{display:flex;position:absolute;top:68px;left:16px;right:16px;flex-direction:column;align-items:stretch;padding:18px;background:#111116;border:1px solid var(--line);border-radius:16px}.menu{display:block}.grid,.reviews,.process{grid-template-columns:1fr 1fr}.about-grid,.booking{grid-template-columns:1fr}.gallery{grid-template-columns:1fr 1fr}.gallery div:first-child{grid-column:1/-1}.form{grid-template-columns:1fr}.field.full,.submit{grid-column:auto}.foot{flex-direction:column}}
+@media(max-width:520px){section{padding:70px 0}.grid,.reviews,.process,.gallery{grid-template-columns:1fr}.gallery div:first-child{grid-column:auto}.photo{height:400px}.hero{min-height:90vh}.lead{font-size:16px}}
+</style>
+</head>
+<body>
+<nav><div class="wrap nav"><a class="logo" href="#">Ali <b>Event Organizer</b></a><div class="links" id="links"><a href="#services">Services</a><a href="#gallery">Gallery</a><a href="#booking">Booking</a><a class="btn" href="https://wa.me/923213427117" target="_blank">WhatsApp</a></div><div class="menu" onclick="document.getElementById('links').classList.toggle('open')">☰</div></div></nav>
+
+<header class="hero"><div class="wrap hero-inner"><div class="eyebrow">Lahore • Premium Event Management</div><h1>Your Celebration.<br><span>Our Masterpiece.</span></h1><p class="lead">Birthday parties, weddings, mehndi, engagements and private events — professionally planned, beautifully styled and managed from start to finish.</p><div class="actions"><a class="btn" href="#booking">Book Your Event</a><a class="outline" href="https://wa.me/923213427117?text=Hello%20Ali%20Event%20Organizer%2C%20I%20want%20a%20quotation." target="_blank">Get Free Quote →</a></div></div></header>
+
+<section id="services"><div class="wrap"><div class="heading"><div class="eyebrow">Our Services</div><h2>Everything Your Event Needs</h2><p>Creative planning and complete event management for memorable celebrations in Lahore.</p></div><div class="grid">
+<div class="card"><div class="icon">🎂</div><h3>Birthday Parties</h3><p>Premium birthday themes, balloon décor, cake tables, welcome setups and customized party styling.</p></div>
+<div class="card"><div class="icon">💍</div><h3>Wedding Events</h3><p>Elegant wedding décor, stage styling, guest coordination and complete event-day management.</p></div>
+<div class="card"><div class="icon">🌸</div><h3>Mehndi & Dholki</h3><p>Colorful Pakistani mehndi themes, floral setups, seating and photo-ready décor.</p></div>
+<div class="card"><div class="icon">🎈</div><h3>Kids Parties</h3><p>Fun themes, balloon arrangements and child-friendly celebration concepts.</p></div>
+<div class="card"><div class="icon">🏢</div><h3>Corporate Events</h3><p>Professional launches, dinners, gatherings and branded event experiences.</p></div>
+<div class="card"><div class="icon">✨</div><h3>Private Events</h3><p>Engagements, anniversaries, graduations and custom celebrations built around your idea.</p></div>
+</div></div></section>
+
+<section><div class="wrap"><div class="about-grid"><div class="photo"><img src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=1200&q=85" alt="Elegant event setup"></div><div><div class="eyebrow">Why Ali Event Organizer</div><h2>We Plan. We Organize. <span>You Celebrate.</span></h2><p>We take care of the details so you can enjoy your special day. From the first idea to the final setup, our focus is on creativity, punctuality and a polished experience.</p><ul class="checks"><li>Customized event concepts</li><li>Professional coordination</li><li>Beautiful décor & styling</li><li>Flexible packages and quotations</li><li>Reliable event-day management</li></ul><a class="btn" href="#booking">Plan My Event</a></div></div></div></section>
+
+<section id="gallery"><div class="wrap"><div class="heading"><div class="eyebrow">Birthday & Event Gallery</div><h2>Celebrate in Style</h2><p>Sample visuals for birthday, party and celebration inspiration.</p></div><div class="gallery">
+<div><img src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?auto=format&fit=crop&w=1200&q=85" alt="Birthday balloons"></div>
+<div><img src="https://images.unsplash.com/photo-1464349153735-7db50ed83c84?auto=format&fit=crop&w=900&q=85" alt="Birthday cake"></div>
+<div><img src="https://images.unsplash.com/photo-1527529482837-4698179dc6ce?auto=format&fit=crop&w=900&q=85" alt="Birthday celebration"></div>
+<div><img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=900&q=85" alt="Party event"></div>
+<div><img src="https://images.unsplash.com/photo-1519671282429-b44660ead0a7?auto=format&fit=crop&w=900&q=85" alt="Party decoration"></div>
+</div></div></section>
+
+<section><div class="wrap"><div class="heading"><div class="eyebrow">How It Works</div><h2>From Idea to Celebration</h2></div><div class="process"><div class="step"><div class="num">01</div><h3>Tell Us</h3><p>Share your event, date, venue and requirements.</p></div><div class="step"><div class="num">02</div><h3>Get Quote</h3><p>We discuss your needs and prepare a custom quotation.</p></div><div class="step"><div class="num">03</div><h3>We Organize</h3><p>Our team handles the planning, décor and coordination.</p></div><div class="step"><div class="num">04</div><h3>You Celebrate</h3><p>Relax and enjoy while we manage your event.</p></div></div></div></section>
+
+<section id="booking"><div class="wrap"><div class="booking"><div class="box"><div class="eyebrow">Book Your Event</div><h2>Let's Make It <span>Special.</span></h2><p>Fill in the details and your request will open directly in WhatsApp.</p><div class="contact"><a href="tel:+923213427117">📞 0321 3427117</a><a href="https://wa.me/923213427117" target="_blank">💬 WhatsApp</a><a href="#">📍 Lahore, Pakistan</a></div></div><div class="box"><form id="form" class="form">
+<div class="field"><label>Name</label><input id="name" required placeholder="Your name"></div><div class="field"><label>Phone</label><input id="phone" required placeholder="03XXXXXXXXX"></div>
+<div class="field"><label>Event Type</label><select id="type" required><option value="">Select event</option><option>Birthday Party</option><option>Wedding</option><option>Mehndi / Dholki</option><option>Engagement</option><option>Kids Party</option><option>Corporate Event</option><option>Private Event</option></select></div>
+<div class="field"><label>Date</label><input id="date" type="date" required></div>
+<div class="field"><label>Venue / Location</label><input id="venue" required placeholder="Lahore venue"></div><div class="field"><label>Guests</label><input id="guests" type="number" placeholder="Approx. guests"></div>
+<div class="field full"><label>Budget</label><select id="budget"><option>Not decided</option><option>Under Rs. 50,000</option><option>Rs. 50,000 - 100,000</option><option>Rs. 100,000 - 200,000</option><option>Rs. 200,000+</option></select></div>
+<div class="field full"><label>Requirements</label><textarea id="msg" placeholder="Theme, decoration, cake, stage, special requirements..."></textarea></div>
+<button class="btn submit" type="submit">📲 Send Booking on WhatsApp</button></form></div></div></div></section>
+
+<section><div class="wrap"><div class="cta"><div class="eyebrow">Ali Event Organizer • Lahore</div><h2>Ready to Celebrate?</h2><p>Tell us what you are planning and let us turn your idea into a beautiful event.</p><a class="btn" href="https://wa.me/923213427117?text=Hello%20Ali%20Event%20Organizer%2C%20I%20want%20to%20plan%20an%20event." target="_blank">Start Planning on WhatsApp</a></div></div></section>
+
+<footer><div class="wrap foot"><div><strong>Ali Event Organizer</strong><br>Lahore, Pakistan</div><div>📞 0321 3427117<br>💬 WhatsApp Booking</div><div>© 2026 Ali Event Organizer</div></div></footer>
+<a class="wa" href="https://wa.me/923213427117?text=Hello%20Ali%20Event%20Organizer%2C%20I%20want%20to%20book%20an%20event." target="_blank">☎</a>
+<script>
+document.getElementById("form").addEventListener("submit",function(e){e.preventDefault();const v=id=>document.getElementById(id).value;const text=`*NEW BOOKING — ALI EVENT ORGANIZER*%0A%0A👤 Name: ${v("name")}%0A📞 Phone: ${v("phone")}%0A🎉 Event: ${v("type")}%0A📅 Date: ${v("date")}%0A📍 Venue: ${v("venue")}%0A👥 Guests: ${v("guests")||"Not specified"}%0A💰 Budget: ${v("budget")}%0A📝 Requirements: ${v("msg")||"None"}`;window.open("https://wa.me/923213427117?text="+text,"_blank")});
+</script>
+</body>
+</html>
